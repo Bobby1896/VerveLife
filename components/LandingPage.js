@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   View,
@@ -11,13 +11,25 @@ import {
 } from 'react-native';
 
 const LandingPage = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Get Started');
+    }, 4000);
+  });
+
   return (
-    <SafeAreaView style={[styles.container]}>
-      <TouchableOpacity onPress={() => navigation.navigate('Get Started')}>
-        <StatusBar backgroundColor={'#03435F'} hidden={false} />
-        <Image source={require('../images/verveBigLogo.png')} />
-      </TouchableOpacity>
-    </SafeAreaView>
+    // <SafeAreaView style={[styles.container]}>
+    <ImageBackground
+      source={require('../images/gradients.png')}
+      style={[styles.container]}>
+      <StatusBar
+        translucent={true}
+        backgroundColor={'transparent'}
+        hidden={false}
+      />
+      <Image source={require('../images/verveBigLogo.png')} />
+    </ImageBackground>
+    // </SafeAreaView>
   );
 };
 

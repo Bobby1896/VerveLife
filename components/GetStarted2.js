@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 
-const GetStarted2 = () => {
+const GetStarted2 = ({navigation}) => {
   const localImage = require('../images/vegetables.png');
   return (
     <ImageBackground source={localImage} style={styles.container}>
@@ -22,7 +22,7 @@ const GetStarted2 = () => {
             fontWeight: 600,
             letterSpacing: 0.5,
           }}>
-          Your Best Life Starts Here
+          Eat Right, Eat Healthy
         </Text>
         <Text
           style={{
@@ -31,12 +31,13 @@ const GetStarted2 = () => {
             textAlign: 'center',
             marginTop: 10,
           }}>
-          Smash your goals, control your {'\n'} money and make every day count!
+          Get meal tips that give you the right start {'\n'} to a healthy
+          lifestyle
         </Text>
       </View>
 
       <View style={{alignItems: 'center'}}>
-        <TouchableOpacity onPress={() => navigation.navigate('Get Started 2')}>
+        <TouchableOpacity onPress={() => navigation.navigate('')}>
           <Text style={styles.btn}>Get Started</Text>
         </TouchableOpacity>
       </View>
