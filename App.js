@@ -5,6 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LandingPage from './components/LandingPage';
 import GetStarted1 from './components/GetStarted1';
 import GetStarted2 from './components/GetStarted2';
+import GetStarted3 from './components/GetStarted3';
+import Login from './components/Login';
 
 const Stack = createNativeStackNavigator();
 const MyStack = () => {
@@ -24,6 +26,16 @@ const MyStack = () => {
         <Stack.Screen
           name="Get Started 2"
           component={GetStarted2}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Get Started 3"
+          component={GetStarted3}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
           options={{headerShown: false}}
         />
         {/* <Stack.Screen name="Profile" component={ProfileScreen} /> */}

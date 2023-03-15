@@ -37,7 +37,7 @@ const GetStarted2 = ({navigation}) => {
       </View>
 
       <View style={{alignItems: 'center'}}>
-        <TouchableOpacity onPress={() => navigation.navigate('')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Get Started 3')}>
           <Text style={styles.btn}>Get Started</Text>
         </TouchableOpacity>
       </View>

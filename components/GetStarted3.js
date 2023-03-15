@@ -8,8 +8,8 @@ import {
   View,
 } from 'react-native';
 
-const GetStarted2 = ({navigation}) => {
-  const localImage = require('../images/vegetables.png');
+const GetStarted3 = ({navigation}) => {
+  const localImage = require('../images/guy.png');
   return (
     <ImageBackground source={localImage} style={styles.container}>
       <StatusBar backgroundColor={'black'} hidden={false} />
@@ -22,7 +22,7 @@ const GetStarted2 = ({navigation}) => {
             fontWeight: 600,
             letterSpacing: 0.5,
           }}>
-          Eat Right, East Healthy
+          The Support System You Always Wished For
         </Text>
         <Text
           style={{
@@ -31,13 +31,13 @@ const GetStarted2 = ({navigation}) => {
             textAlign: 'center',
             marginTop: 10,
           }}>
-          Get meal tips that give you the right start {'\n'} to a healthy
-          lifestyle
+          Tips and tricks from professional instructors, {'\n'} connect with
+          fitness buddies from across the world
         </Text>
       </View>
 
       <View style={{alignItems: 'center'}}>
-        <TouchableOpacity onPress={() => navigation.navigate('')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
           <Text style={styles.btn}>Get Started</Text>
         </TouchableOpacity>
       </View>
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GetStarted2;
+export default GetStarted3;
