@@ -10,15 +10,14 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const LandingPage = ({navigation}) => {
+const SplashScreen = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('Get Started');
+      navigation.navigate('Sliders');
     }, 4000);
   });
 
   return (
-    // <SafeAreaView style={[styles.container]}>
     <ImageBackground
       source={require('../images/gradients.png')}
       style={[styles.container]}>
@@ -29,7 +28,6 @@ const LandingPage = ({navigation}) => {
       />
       <Image source={require('../images/verveBigLogo.png')} />
     </ImageBackground>
-    // </SafeAreaView>
   );
 };
 
@@ -41,4 +39,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#03435F',
   },
 });
-export default LandingPage;
+export default SplashScreen;

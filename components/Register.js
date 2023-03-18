@@ -6,12 +6,13 @@ import {
   Text,
   View,
   StatusBar,
+  Label,
 } from 'react-native';
 import React from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {Link} from '@react-navigation/native';
 
-const Login = ({navigation}) => {
+const Register = ({navigation}) => {
   //   const localImage = require('../images/verveLogo.png');
   return (
     <SafeAreaView style={styles.container}>
@@ -65,8 +66,8 @@ const Login = ({navigation}) => {
             paddingTop: 15,
             paddingBottom: 20,
             paddingLeft: 20,
-            paddingRight: 30,
-            gap: 5,
+            paddingRight: 25,
+            gap: 8,
             fontWeight: 600,
             fontSize: 14,
             borderRadius: 3,
@@ -78,9 +79,9 @@ const Login = ({navigation}) => {
         <View
           style={{
             flexDirection: 'row',
-            gap: 5,
+            gap: 8,
             backgroundColor: '#DF4930',
-            paddingTop: 15,
+            paddingTop: 17,
             paddingBottom: 20,
             paddingLeft: 20,
             paddingRight: 30,
@@ -96,8 +97,20 @@ const Login = ({navigation}) => {
       </View>
 
       <View style={styles.input}>
+        <Text
+          style={{
+            marginRight: 250,
+            color: '#00425F',
+            fontSize: 14,
+            fontWeight: 400,
+            marginBottom: 10,
+          }}>
+          Select an Activity{' '}
+          <Text style={{color: '#DC4437', fontWeight: 700}}>*</Text>
+        </Text>
+
         <TextInput
-          placeholder="Email or Mobile No."
+          placeholder="(E.g Walk)"
           style={{
             backgroundColor: '#E8E8E8',
             width: 370,
@@ -106,8 +119,30 @@ const Login = ({navigation}) => {
             height: 70,
           }}
         />
+        <FontAwesome5
+          style={{
+            marginLeft: 300,
+            fontSize: 22,
+            position: 'relative',
+            marginTop: -65,
+            marginBottom: 50,
+          }}
+          name={'caret-down'}
+        />
+
+        <Text
+          style={{
+            marginRight: 270,
+            color: '#00425F',
+            fontSize: 14,
+            fontWeight: 400,
+            marginBottom: 10,
+          }}>
+          Activity Name{' '}
+          <Text style={{color: '#DC4437', fontWeight: 700}}>*</Text>
+        </Text>
         <TextInput
-          placeholder="Password"
+          placeholder="(E.g Saturday run)"
           secureTextEntry={true}
           style={{
             backgroundColor: '#E8E8E8',
@@ -116,19 +151,6 @@ const Login = ({navigation}) => {
             height: 70,
           }}
         />
-      </View>
-
-      <View style={styles.forgot}>
-        <Text
-          onPress={() => navigation.navigate('')}
-          style={{fontSize: 14, fontWeight: 400, color: '#4B4B4B'}}>
-          Forgot Password?
-        </Text>
-        <Text
-          onPress={() => navigation.navigate('')}
-          style={{fontSize: 14, fontWeight: 400, color: '#3077BD'}}>
-          Recover
-        </Text>
       </View>
 
       <View style={styles.login}>
@@ -146,7 +168,7 @@ const Login = ({navigation}) => {
           LOG IN
         </Text>
         <Text
-          onPress={() => navigation.navigate('Register')}
+          onPress={() => navigation.navigate('')}
           style={{
             color: '#3077BD',
             fontSize: 16,
@@ -172,6 +194,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#FFFFFF',
   },
+
   socialMedia: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -195,4 +218,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default Register;
