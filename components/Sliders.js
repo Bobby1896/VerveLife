@@ -18,9 +18,22 @@ const Sliders = ({navigation}) => {
       style={styles.wrapper}
       dotColor="grey"
       activeDotColor="#FFFFFF"
-      dotStyle={{marginBottom: 85}}
       autoplay={true}
-      autoplayInterval={5000}>
+      autoplayInterval={8000}
+      dot={
+        <View
+          style={{
+            backgroundColor: 'rgba(0,0,0,.2)',
+            width: 8,
+            height: 8,
+            borderRadius: 4,
+            marginLeft: 3,
+            marginRight: 3,
+            marginTop: 100,
+            marginBottom: 100,
+          }}
+        />
+      }>
       <ImageBackground source={Image1} style={styles.slide1}>
         <StatusBar backgroundColor={'black'} hidden={false} />
 

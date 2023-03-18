@@ -72,7 +72,11 @@ const Login = ({navigation}) => {
             borderRadius: 3,
           }}>
           <FontAwesome5 name={'facebook-square'} style={styles.mediaIcons} />
-          <Text style={{color: '#ffffff', marginTop: 3}}>Facebook account</Text>
+          <Text
+            onPress={() => navigation.navigate('https://www.facebook.com/')}
+            style={{color: '#ffffff', marginTop: 3}}>
+            Facebook account
+          </Text>
         </View>
 
         <View
@@ -91,7 +95,11 @@ const Login = ({navigation}) => {
             borderRadius: 3,
           }}>
           <FontAwesome5 name={'google'} style={styles.mediaIcons} />
-          <Text style={{color: '#ffffff', marginTop: 3}}>Google account</Text>
+          <Text
+            onPress={() => navigation.navigate('https://www.google.com/')}
+            style={{color: '#ffffff', marginTop: 3}}>
+            Google account
+          </Text>
         </View>
       </View>
 

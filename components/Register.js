@@ -73,7 +73,11 @@ const Register = ({navigation}) => {
             borderRadius: 3,
           }}>
           <FontAwesome5 name={'facebook-square'} style={styles.mediaIcons} />
-          <Text style={{color: '#ffffff', marginTop: 3}}>Facebook account</Text>
+          <Text
+            onPress={() => navigation.navigate('https://www.facebook.com/')}
+            style={{color: '#ffffff', marginTop: 3}}>
+            Facebook account
+          </Text>
         </View>
 
         <View
@@ -92,7 +96,11 @@ const Register = ({navigation}) => {
             borderRadius: 3,
           }}>
           <FontAwesome5 name={'google'} style={styles.mediaIcons} />
-          <Text style={{color: '#ffffff', marginTop: 3}}>Google account</Text>
+          <Text
+            onPress={() => navigation.navigate('https://www.google.com/')}
+            style={{color: '#ffffff', marginTop: 3}}>
+            Google account
+          </Text>
         </View>
       </View>
 
@@ -143,7 +151,6 @@ const Register = ({navigation}) => {
         </Text>
         <TextInput
           placeholder="(E.g Saturday run)"
-          secureTextEntry={true}
           style={{
             backgroundColor: '#E8E8E8',
             width: 370,
@@ -168,7 +175,7 @@ const Register = ({navigation}) => {
           LOG IN
         </Text>
         <Text
-          onPress={() => navigation.navigate('')}
+          onPress={() => navigation.navigate('Registration Info')}
           style={{
             color: '#3077BD',
             fontSize: 16,

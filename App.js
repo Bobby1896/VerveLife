@@ -5,6 +5,7 @@ import SplashScreen from './components/SplashScreen';
 import Login from './components/Login';
 import Register from './components/Register';
 import Sliders from './components/Sliders';
+import RegistrationInfo from './components/RegistrationInfo';
 
 const Stack = createNativeStackNavigator();
 const MyStack = () => {
@@ -29,6 +30,11 @@ const MyStack = () => {
         <Stack.Screen
           name="Sliders"
           component={Sliders}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Registration Info"
+          component={RegistrationInfo}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
