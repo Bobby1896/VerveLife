@@ -18,7 +18,7 @@ const RegistrationInfo = ({navigation}) => {
         <FontAwesome5
           style={{color: '#00425F', fontSize: 28, marginLeft: -22}}
           name={'chevron-left'}
-          onPress={() => navigation.navigate('Register')}
+          onPress={() => navigation.navigate('Account Creation')}
         />
         <Text
           style={{
@@ -38,7 +38,7 @@ const RegistrationInfo = ({navigation}) => {
       <View>
         <Text
           style={{
-            marginTop: 20,
+            marginTop: 15,
             marginLeft: 15,
             fontSize: 20,
             fontWeight: 600,
@@ -67,7 +67,7 @@ const RegistrationInfo = ({navigation}) => {
             width: 370,
             paddingLeft: 15,
             height: 70,
-            marginBottom: 20,
+            marginBottom: 10,
           }}
         />
 
@@ -89,7 +89,7 @@ const RegistrationInfo = ({navigation}) => {
             backgroundColor: '#E8E8E8',
             width: 370,
             paddingLeft: 15,
-            marginBottom: 20,
+            marginBottom: 10,
             height: 70,
           }}
         />
@@ -122,7 +122,7 @@ const RegistrationInfo = ({navigation}) => {
             width: 370,
             paddingLeft: 15,
             height: 70,
-            marginBottom: 20,
+            marginBottom: 10,
           }}
         />
 
@@ -144,7 +144,7 @@ const RegistrationInfo = ({navigation}) => {
             backgroundColor: '#E8E8E8',
             width: 370,
             paddingLeft: 15,
-            marginBottom: 20,
+            marginBottom: 10,
             height: 70,
           }}
         />
@@ -234,13 +234,36 @@ const RegistrationInfo = ({navigation}) => {
           </View>
         </View>
       </View>
+
+      <View
+        style={{
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'row',
+          gap: 10,
+          marginTop: 20,
+        }}>
+        <Text
+          style={{
+            textAlign: 'center',
+            fontSize: 20,
+            fontWeight: 400,
+            color: '#3077BD',
+          }}>
+          Next Step
+        </Text>
+        <FontAwesome5
+          style={{fontSize: 18, color: '#3077BD', marginTop: 5}}
+          name={'chevron-right'}
+        />
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   input: {
-    marginTop: 25,
+    marginTop: 20,
     alignItems: 'center',
   },
 });

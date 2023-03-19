@@ -2,10 +2,11 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from './components/SplashScreen';
-import Login from './components/Login';
-import Register from './components/Register';
+import LoginRegister from './components/LoginRegister';
 import Sliders from './components/Sliders';
 import RegistrationInfo from './components/RegistrationInfo';
+import RecoverPassword from './components/RecoverPassword';
+import AccountCreation from './components/AccountCreation';
 
 const Stack = createNativeStackNavigator();
 const MyStack = () => {
@@ -19,12 +20,7 @@ const MyStack = () => {
         />
         <Stack.Screen
           name="Login"
-          component={Login}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="Register"
-          component={Register}
+          component={LoginRegister}
           options={{headerShown: false}}
         />
         <Stack.Screen
@@ -35,6 +31,16 @@ const MyStack = () => {
         <Stack.Screen
           name="Registration Info"
           component={RegistrationInfo}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Recover Password"
+          component={RecoverPassword}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Account Creation"
+          component={AccountCreation}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

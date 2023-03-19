@@ -11,7 +11,7 @@ import React from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {Link} from '@react-navigation/native';
 
-const Login = ({navigation}) => {
+const LoginRegister = ({navigation}) => {
   //   const localImage = require('../images/verveLogo.png');
   return (
     <SafeAreaView style={styles.container}>
@@ -133,7 +133,7 @@ const Login = ({navigation}) => {
           Forgot Password?
         </Text>
         <Text
-          onPress={() => navigation.navigate('')}
+          onPress={() => navigation.navigate('Recover Password')}
           style={{fontSize: 14, fontWeight: 400, color: '#3077BD'}}>
           Recover
         </Text>
@@ -154,7 +154,7 @@ const Login = ({navigation}) => {
           LOG IN
         </Text>
         <Text
-          onPress={() => navigation.navigate('Register')}
+          onPress={() => navigation.navigate('Account Creation')}
           style={{
             color: '#3077BD',
             fontSize: 16,
@@ -203,4 +203,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default LoginRegister;
