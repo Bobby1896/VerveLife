@@ -149,6 +149,7 @@ const LoginRegister = ({navigation}) => {
             color: '#FFFFFF',
             padding: 15,
             fontSize: 16,
+            borderRadius: 5,
             fontWeight: 600,
           }}>
           LOG IN

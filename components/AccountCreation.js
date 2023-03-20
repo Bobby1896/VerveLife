@@ -188,7 +188,7 @@ const AccountCreation = ({navigation}) => {
                 fontSize: 16,
                 marginBottom: 20,
                 fontWeight: 600,
-                borderRadius: 20,
+                borderRadius: 10,
               }}>
               CREATE ACCOUNT
             </Text>

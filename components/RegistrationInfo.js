@@ -98,8 +98,8 @@ const RegistrationInfo = ({navigation}) => {
             marginLeft: 300,
             fontSize: 22,
             position: 'relative',
-            marginTop: -65,
-            marginBottom: 50,
+            marginTop: -60,
+            marginBottom: 40,
           }}
           name={'caret-down'}
         />
@@ -153,8 +153,8 @@ const RegistrationInfo = ({navigation}) => {
             marginLeft: 300,
             fontSize: 22,
             position: 'relative',
-            marginTop: -65,
-            marginBottom: 50,
+            marginTop: -60,
+            marginBottom: 40,
           }}
           name={'caret-down'}
         />
@@ -235,27 +235,23 @@ const RegistrationInfo = ({navigation}) => {
         </View>
       </View>
 
-      <View
-        style={{
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'row',
-          gap: 10,
-          marginTop: 20,
-        }}>
+      <View>
         <Text
+          onPress={() => navigation.navigate('')}
           style={{
+            backgroundColor: '#3077BD',
+            width: 370,
             textAlign: 'center',
-            fontSize: 20,
-            fontWeight: 400,
-            color: '#3077BD',
+            marginLeft: 12,
+            borderRadius: 10,
+            marginTop: 12,
+            color: '#FFFFFF',
+            padding: 15,
+            fontSize: 18,
+            fontWeight: 600,
           }}>
-          Next Step
+          GET STARTED
         </Text>
-        <FontAwesome5
-          style={{fontSize: 18, color: '#3077BD', marginTop: 5}}
-          name={'chevron-right'}
-        />
       </View>
     </SafeAreaView>
   );
@@ -263,7 +259,7 @@ const RegistrationInfo = ({navigation}) => {
 
 const styles = StyleSheet.create({
   input: {
-    marginTop: 20,
+    marginTop: 12,
     alignItems: 'center',
   },
 });
