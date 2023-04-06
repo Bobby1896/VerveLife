@@ -1,4 +1,10 @@
-import {StyleSheet, Text, View, TextInput} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -235,7 +241,33 @@ const RegistrationInfo = ({navigation}) => {
         </View>
       </View>
 
-      <View>
+      <TouchableOpacity onPress={() => navigation.navigate('Interest')}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            gap: 10,
+            marginTop: 30,
+          }}>
+          <View>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontSize: 18,
+                fontWeight: 400,
+                color: '#1A73E8',
+              }}>
+              Next Step
+            </Text>
+          </View>
+          <FontAwesome5
+            style={{color: '#1A73E8', marginTop: 3, fontSize: 22}}
+            name="angle-right"
+          />
+        </View>
+      </TouchableOpacity>
+
+      {/* <View>
         <Text
           onPress={() => navigation.navigate('')}
           style={{
@@ -252,7 +284,7 @@ const RegistrationInfo = ({navigation}) => {
           }}>
           GET STARTED
         </Text>
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 };

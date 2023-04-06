@@ -7,6 +7,8 @@ import Sliders from './components/Sliders';
 import RegistrationInfo from './components/RegistrationInfo';
 import RecoverPassword from './components/RecoverPassword';
 import AccountCreation from './components/AccountCreation';
+import Interest from './components/Interest';
+import MyeWallet from './components/MyeWallet';
 
 const Stack = createNativeStackNavigator();
 const MyStack = () => {
@@ -41,6 +43,16 @@ const MyStack = () => {
         <Stack.Screen
           name="Account Creation"
           component={AccountCreation}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Interest"
+          component={Interest}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="My eWallet"
+          component={MyeWallet}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

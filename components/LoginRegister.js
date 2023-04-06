@@ -141,7 +141,7 @@ const LoginRegister = ({navigation}) => {
 
       <View style={styles.login}>
         <Text
-          onPress={() => navigation.navigate('')}
+          onPress={() => navigation.navigate('My eWallet')}
           style={{
             backgroundColor: '#3077BD',
             width: 360,
