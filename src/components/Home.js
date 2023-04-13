@@ -16,7 +16,7 @@ const Home = () => {
     <div className="container w-auto grid grid-cols-12  justify-center gap-5">
       <div className="  text-lg text-grey-300 pt-8 col-span-2 ">
         <div className="flex justify-center">
-          <img src={Logo} alt="Logo" />
+          {/* <img src={Logo} alt="Logo" /> */}
         </div>
         <div className=" flex justify-center text-[#F3E7E7]">
           <div className="flex flex-col  gap-5">
